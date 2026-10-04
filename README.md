@@ -9,8 +9,11 @@ The diagram compares independent historical models. Its juxtaposition does not i
 ## What this repository contains
 
 - One raster presentation image, 1920 x 1654 pixels.
+- A static reading page with zoom and fullscreen controls, using that same PNG.
 - This introduction and a rights notice.
 - Ignore rules to help keep editable and production files out of this edition.
+
+Open `index.html` to view the presentation locally. The viewer uses locally bundled Lucide 0.468.0 icons; their license is included under `vendor/`. The icons are interface graphics, not the editable diagram. The page has no analytics, external scripts or external fonts.
 
 ## What remains outside this public edition
 

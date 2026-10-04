@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Friedman + Gmirkin: fuentes, dependencias y cronologia del Pentateuco. Diagrama comparativo de BESA / Beit Ein Sof Academy.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'">
+  <title>Friedman + Gmirkin | BESA</title>
+  <link rel="stylesheet" href="viewer.css">
+  <script src="vendor/lucide.min.js" defer></script>
+  <script src="viewer.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="heading">
+      <a class="brand" href="https://beiteinsofacademy.com/">BESA</a>
+      <div><h1>Friedman + Gmirkin</h1><p>Fuentes, dependencias y cronolog&iacute;a del Pentateuco</p></div>
+    </div>
+    <nav class="controls" aria-label="Visor del diagrama">
+      <button id="minus" type="button" title="Reducir" aria-label="Reducir"><i data-lucide="zoom-out" aria-hidden="true"></i></button>
+      <input id="zoom" type="range" min="10" max="300" step="1" value="100" aria-label="Ampliacion del diagrama">
+      <output id="percent" for="zoom">100%</output>
+      <button id="plus" type="button" title="Ampliar" aria-label="Ampliar"><i data-lucide="zoom-in" aria-hidden="true"></i></button>
+      <span class="divider" aria-hidden="true"></span>
+      <button id="fit" type="button" title="Ajustar a pantalla" aria-label="Ajustar a pantalla"><i data-lucide="scan" aria-hidden="true"></i></button>
+      <button id="fullscreen" type="button" title="Pantalla completa" aria-label="Pantalla completa"><i data-lucide="maximize" aria-hidden="true"></i></button>
+    </nav>
+  </header>
+  <main id="viewport" tabindex="0" aria-label="Diagrama comparativo de Friedman y Gmirkin">
+    <div id="surface">
+      <img id="diagram" src="friedman-gmirkin-preview.png" width="1920" height="1654" alt="Friedman y Gmirkin, edicion 2.0: diagrama comparativo de las fuentes, dependencias y cronologia del Pentateuco" draggable="false" fetchpriority="high">
+    </div>
+    <p id="error" role="alert" hidden>No se pudo cargar el diagrama. <a href="friedman-gmirkin-preview.png">Abrir imagen</a></p>
+  </main>
+  <footer><span>Edici&oacute;n 2.0 &middot; Modelos independientes en comparaci&oacute;n</span><a href="https://beiteinsofacademy.com/">Beit Ein Sof Academy</a></footer>
+</body>
+</html>
