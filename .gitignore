@@ -1,0 +1,24 @@
+# This repository is a raster-only public presentation.
+*.svg
+*.pdf
+*.py
+*.zip
+*.glb
+*.obj
+*.ai
+*.eps
+*.psd
+*.xcf
+*.sketch
+.env*
+*.pem
+*.key
+*.p12
+*.pfx
+exports/
+sources/
+originals/
+private/
+node_modules/
+.DS_Store
+Thumbs.db
